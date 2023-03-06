@@ -72,6 +72,11 @@ genAsstButton.addEventListener("click", () => {
   const a = getRandomFile(files);
   let link = `${a.file}`;
   downloadMyAssessmentLink.href = link;
+});
+
+downloadMyAssessmentButton.addEventListener("click", () => {
+  const deviceId = Math.floor(Math.random() * 1000000);
+  document.cookie = `deviceId=${deviceId}`;
   setTimeout(vanquish(), 2000);
 });
 
