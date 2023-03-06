@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale0"
+    />
+    <title>Prunning Assesment Week</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>
+          The <span>REBELS</span> are happy to have you among us and are glad
+          you've chosen this path. We're grateful
+        </h1>
+
+        <h1>
+          We're very happy to indulge you in this week's prunning assessment
+        </h1>
+      </section>
+
+      <section>
+        <h1>Instructions</h1>
+        <ul>
+          <li>Enter your full name</li>
+          <li>
+            Click on "check register" button
+            <br />
+            <span style="color: limegreen">if found</span>
+            <ul>
+              <li>click on the "Download Base Assessment" button</li>
+              <li>click on "Generate My Assessment" button</li>
+              <li>click on the "Download My Assessment" button</li>
+            </ul>
+          </li>
+          <li>
+            <span style="color: tomato">if not found</span>
+            <br />
+            Contact Division Lead
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <div>
+          <input
+            type="text"
+            id="name-input"
+            placeholder="your full name"
+          />
+          <button id="checkName">Check Register</button>
+        </div>
+
+        <div
+          class="found"
+          id="found-div"
+        ></div>
+      </section>
+
+      <section>
+        <ul class="assessment-controls">
+          <li>
+            <a
+              href="./assessment/base.png"
+              download
+            >
+              <button id="downloadBaseAssessment">
+                Download Base Assessment
+              </button>
+            </a>
+          </li>
+          <li>
+            <button id="genAsst">Generate My Assessment</button>
+          </li>
+          <li>
+            <a
+              download
+              id="downloadMyAssessmentLink"
+            >
+              <button
+                id="downloadMyAssessment"
+                disabled
+              >
+                Download My Assessment
+              </button>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

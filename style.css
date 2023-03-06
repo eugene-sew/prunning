@@ -1,0 +1,127 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+h1 span {
+  color: #ff2e2e;
+}
+
+section {
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #f1c40f;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+}
+
+input[type="text"]::placeholder {
+  color: #f1c40f;
+}
+
+.found {
+  background-color: #2ecc71;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* .found::before {
+  content: "\2714";
+  font-size: 30px;
+  margin-right: 10px;
+} */
+
+.assessment-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.assessment-controls li:not(:last-child) {
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #5c5c5c;
+  opacity: 0.3;
+  color: white;
+  cursor: none;
+}
