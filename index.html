@@ -16,7 +16,7 @@
       href="./style.css"
     />
   </head>
-  <body>
+  <body id="body">
     <main>
       <section>
         <h1>
@@ -71,16 +71,24 @@
         <ul class="assessment-controls">
           <li>
             <a
-              href="./assessment/base.png"
               download
+              id="downloadBaseAssessmentLink"
             >
-              <button id="downloadBaseAssessment">
+              <button
+                id="downloadBaseAssessment"
+                disabled
+              >
                 Download Base Assessment
               </button>
             </a>
           </li>
           <li>
-            <button id="genAsst">Generate My Assessment</button>
+            <button
+              id="genAsst"
+              disabled
+            >
+              Generate My Assessment
+            </button>
           </li>
           <li>
             <a

@@ -9,7 +9,11 @@ const downloadMyAssessmentButton = document.getElementById(
 const downloadBaseAssessmentButton = document.getElementById(
   "downloadBaseAssessment"
 );
+const downloadBaseAssessmentLink = document.getElementById(
+  "downloadBaseAssessmentLink"
+);
 
+const body = document.getElementById("body");
 let persons = [];
 
 const files = [
@@ -38,11 +42,19 @@ const input = document.querySelector("input");
 const foundDiv = document.querySelector(".found");
 
 checkRegisterButton.addEventListener("click", () => {
-  const name = input.value;
-  const person = persons.find((p) => p.name === name);
+  const rrName = input.value;
+  const rName = rrName.toLowerCase().replace(/\s/g, "");
+  const name = rName;
+
+  console.log(name);
+  const person = persons.find(
+    (p) => p.name.toLowerCase().replace(/\s/g, "") === name
+  );
 
   if (person) {
-    foundDiv.textContent = `Name "${name}" exists in register, proceed to download assessment`;
+    foundDiv.textContent = `Name "${rrName}" exists in register, proceed to download assessment`;
+    downloadBaseAssessmentButton.disabled = false;
+    downloadBaseAssessmentLink.href = "./assessment/base.png";
   } else {
     foundDiv.textContent = "Name not found. Contact Division Lead";
   }
@@ -60,4 +72,16 @@ genAsstButton.addEventListener("click", () => {
   const a = getRandomFile(files);
   let link = `${a.file}`;
   downloadMyAssessmentLink.href = link;
+  setTimeout(vanquish(), 2000);
 });
+
+const thanks = ` <main class="sub">
+    <h1 class="sub">Assessment Downloaded Successfully</h1>
+    <p class="sub">We wish you the best. Additional info on submission will be disseminated later.</p>
+  </main>`;
+
+const vanquish = () => {
+  body.className = "sub";
+  body.innerHTML = "";
+  body.innerHTML = thanks;
+};
