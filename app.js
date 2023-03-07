@@ -76,12 +76,12 @@ genAsstButton.addEventListener("click", () => {
 
 downloadMyAssessmentButton.addEventListener("click", () => {
   const deviceId = Math.floor(Math.random() * 1000000);
-  document.cookie = `deviceId=${deviceId}`;
+  document.cookie = `asst2=${deviceId}`;
   setTimeout(vanquish(), 2000);
 });
 
 const thanks = ` <main class="sub">
-    <h1 class="sub">Assessment Downloaded Successfully</h1>
+    <h1 class="sub">Assessment 2 Downloaded Successfully</h1>
     <p class="sub">We wish you the best. Additional info on submission will be disseminated later.</p>
   </main>`;
 
