@@ -17,8 +17,8 @@ const body = document.getElementById("body");
 let persons = [];
 
 const files = [
-  { id: 1, file: "./assessment/1.jpg" },
-  { id: 2, file: "./assessment/2.jpg" },
+  { id: 1, file: "./assessment/1.png" },
+  { id: 2, file: "./assessment/2.png" },
   { id: 3, file: "./assessment/3.png" },
   { id: 4, file: "./assessment/4.png" },
   { id: 5, file: "./assessment/5.png" },
