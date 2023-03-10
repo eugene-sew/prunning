@@ -54,7 +54,7 @@ checkRegisterButton.addEventListener("click", () => {
   if (person) {
     foundDiv.textContent = `Name "${rrName}" exists in register, proceed to download assessment`;
     downloadBaseAssessmentButton.disabled = false;
-    downloadBaseAssessmentLink.href = "./assessment/base.png";
+    downloadBaseAssessmentLink.href = "./assessment/base.zip";
   } else {
     foundDiv.textContent = "Name not found. Contact Division Lead";
   }
@@ -70,18 +70,18 @@ genAsstButton.addEventListener("click", () => {
   genAsstButton.disabled = true;
   downloadMyAssessmentButton.disabled = false;
   const a = getRandomFile(files);
-  let link = `${a.file}`;
+  let link = `./assessment/personal.zip`;
   downloadMyAssessmentLink.href = link;
 });
 
 downloadMyAssessmentButton.addEventListener("click", () => {
   const deviceId = Math.floor(Math.random() * 1000000);
-  document.cookie = `asst2=${deviceId}`;
+  document.cookie = `asst3=${deviceId}`;
   setTimeout(vanquish(), 2000);
 });
 
 const thanks = ` <main class="sub">
-    <h1 class="sub">Assessment 2 Downloaded Successfully</h1>
+    <h1 class="sub">Assessment 3 Downloaded Successfully</h1>
     <p class="sub">We wish you the best. Additional info on submission will be disseminated later.</p>
   </main>`;
 
